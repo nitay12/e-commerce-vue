@@ -1,3 +1,3 @@
 # e_commerce_vue
 
-## an e-commerce template - currently in development
+an e-commerce template - currently in development

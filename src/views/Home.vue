@@ -50,6 +50,8 @@ export default {
   },
   mounted() {
     this.getLatestProducts()
+
+    document.title = 'Home | Django|'
   },
   methods: {
     getLatestProducts() {

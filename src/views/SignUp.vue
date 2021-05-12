@@ -112,7 +112,9 @@ export default {
 
             }
         }
+    },
+    mounted() {
+        document.title = 'Sign up | Django'
     }
-
 }
 </script>

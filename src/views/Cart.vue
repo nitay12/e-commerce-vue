@@ -6,7 +6,7 @@
         </div>
 
         <div class="column is-12 box">
-            <table class="table is-fullwidth" v-if="cartTotalLenght">
+            <table class="table is-fullwidth" v-if="cartTotalLength">
                 <thead>
                     <tr>
                         <th>Product</th>
@@ -30,7 +30,7 @@
         </div>
         <div class="column is-12">
             <h2 class="subtitle">Summery</h2>
-            <strong>${{ cartTotalPrice.toFixed(2) }}</strong>, {{cartTotalLenght}} items.
+            <strong>${{ cartTotalPrice.toFixed(2) }}</strong>, {{cartTotalLength}} items.
 
             <hr>
 
@@ -66,7 +66,7 @@ export default {
         }
     },
     computed: {
-        cartTotalLenght(){
+        cartTotalLength(){
             return this.cart.items.reduce((acc, curVal) => {
                 return acc += curVal.quantity
             }, 0)
